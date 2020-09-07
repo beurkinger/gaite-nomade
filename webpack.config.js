@@ -2,9 +2,9 @@ const Webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const HTML_TITLE = 'Preact Starter Kit';
+const HTML_TITLE = 'Gaite Nomade';
 const PUBLIC_PATH = {
-  PROD: '/preact-starter-kit/',
+  PROD: '/gaite-nomade/',
   DEV: '/',
 };
 

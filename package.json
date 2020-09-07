@@ -1,7 +1,7 @@
 {
-  "name": "preact-starter-kit",
+  "name": "gaite-nomade",
   "version": "1.0.0",
-  "description": "Some boilerplate code to kickstart Preact-based projects.",
+  "description": "A quick prototype for an event website.",
   "main": "index.html",
   "scripts": {
     "build": "webpack --mode production",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/beurkinger/preact-starter-kit.git"
+    "url": "git+https://github.com/beurkinger/gaite-nomade.git"
   },
   "keywords": [
     "preact",
@@ -31,7 +31,7 @@
   "author": "Thibault Goehringer",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/beurkinger/preact-starter-kit/issues"
+    "url": "https://github.com/beurkinger/gaite-nomade/issues"
   },
   "homepage": "https://github.com/beurkinger/preact-starter-kit#readme",
   "dependencies": {
