@@ -1,3 +1,9 @@
+import art from './assets/img/art.jpg';
+import food from './assets/img/food.jpg';
+import fashion from './assets/img/fashion.jpg';
+import music from './assets/img/music.jpg';
+import night from './assets/img/night.jpg';
+
 export const eventsData = [
   {
     id: 1,
@@ -10,7 +16,7 @@ export const eventsData = [
     date: ['2017', '09', '25'],
     linkText: 'www.gaite-lyrique.net',
     linkSrc: 'https://gaite-lyrique.net',
-    pic: 'music.jpg',
+    pic: music,
     color: '#84a0fb',
     lat: 48.8566,
     lng: 2.3522,
@@ -31,7 +37,7 @@ export const eventsData = [
     date: ['2017', '11', '03'],
     linkText: 'www.gaite-lyrique.net',
     linkSrc: 'https://gaite-lyrique.net',
-    pic: 'food2.jpg',
+    pic: food,
     color: '#f3f3b9',
     lat: 48.83,
     lng: 2.3652,
@@ -52,7 +58,7 @@ export const eventsData = [
     date: ['2018', '01', '07'],
     linkText: 'www.gaite-lyrique.net',
     linkSrc: 'https://gaite-lyrique.net',
-    pic: 'art3.jpg',
+    pic: art,
     color: '#D6B2F9',
     lat: 48.88,
     lng: 2.3652,
@@ -73,7 +79,7 @@ export const eventsData = [
     date: ['2018', '02', '24'],
     linkText: 'www.gaite-lyrique.net',
     linkSrc: 'https://gaite-lyrique.net',
-    pic: 'mode.jpg',
+    pic: fashion,
     color: '#edbacc',
     lat: 48.86,
     lng: 2.28,
@@ -94,7 +100,7 @@ export const eventsData = [
     date: ['2017', '10', '03'],
     linkText: 'www.gaite-lyrique.net',
     linkSrc: 'https://gaite-lyrique.net',
-    pic: 'night.jpg',
+    pic: night,
     color: '#dbc7cf',
     lat: 48.88,
     lng: 2.32,

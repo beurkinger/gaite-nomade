@@ -1,0 +1,326 @@
+.windowLayout {
+    box-sizing: border-box;
+    position: relative;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    font: bold 14px CircularStd, Helvetica, Arial;
+    line-height: 130%;
+    letter-spacing: 0.5px;
+    background: #FFF;
+}
+
+.windowLayout .cell {
+    padding: 8px 14px;
+    border: 2px solid black;
+}
+
+.windowLayout .cell.borderTop {
+    border-width: inherit 0 0 0;
+}
+
+.windowLayout .cell.borderTop {
+    border-width: 0 0 inherit 0;
+}
+
+.windowLayout .exit {
+    position: relative;
+    box-sizing: border-box;
+    top: 8%;
+    height: 84%;
+    width: auto;
+    margin: 0 auto;
+}
+
+.windowLayout .address {}
+
+.windowLayout .eventType {
+    display: inline-block;
+    margin-top: 10px;
+    font: bold 70px "TypoLyrique13", Helvetica, Arial;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.80);
+}
+
+.windowLayout .eventType:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.windowLayout .month {
+    text-transform: uppercase;
+}
+
+.windowLayout .date, .windowLayout .year {
+    position: absolute;
+    bottom: 5px;
+    font: bold 30px "TypoLyrique13", Helvetica, Arial;
+    letter-spacing: 3px;
+}
+
+.windowLayout .year {
+    font: bold 30px "CircularStd", Helvetica, Arial;
+    letter-spacing: 2px;
+}
+
+.windowLayout .link {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+}
+
+.windowLayout .link:hover {
+    text-decoration: underline;
+}
+
+.windowLayout.large {
+    border: 3px solid black;
+    font-size: calc((2vw + 5vh) / 2);
+    line-height: 135%;
+    letter-spacing: 0.05vw;
+}
+
+.windowLayout.large .cell {
+    padding: 3vh 3vw;
+    border: 3px solid black;
+}
+
+.windowLayout.large .exit {
+    top: 20%;
+    height: 60%;
+}
+
+.windowLayout.large .address, .windowLayout.large .eventType, .windowLayout.large .desc, .windowLayout.large .date, .windowLayout.large .year {
+    position: relative;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.windowLayout.large .eventType {
+    margin-top: 0;
+    bottom: auto;
+    font: bold calc((11vw + 11vh) / 2) "TypoLyrique13", Helvetica, Arial;
+    letter-spacing: 0.3vw;
+}
+
+.windowLayout.large .eventType:hover {
+    cursor: default;
+    text-decoration: none;
+}
+
+.windowLayout.large .desc {
+    text-transform: uppercase;
+}
+
+.windowLayout.large .date, .windowLayout.large .year {
+    bottom: auto;
+    font: inherit;
+    letter-spacing: 0.05vw;
+}
+
+.windowLayout.large .year {
+    text-align: center;
+    font: inherit;
+    letter-spacing: 0.2vw;
+    font-size: calc((3vw + 6vh) / 2);
+}
+
+.row {
+    display: block;
+}
+
+.cell {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cell.noPadding {
+    padding: 0 !important;
+}
+
+.cell.noBorder {
+    border: none !important;
+}
+
+.col10 {
+    width: 10%;
+}
+
+.col15 {
+    width: 15%;
+}
+
+.col20 {
+    width: 20%;
+}
+
+.col25 {
+    width: 25%;
+}
+
+.col30 {
+    width: 30%;
+}
+
+.col33 {
+    width: 33.33%;
+}
+
+.col35 {
+    width: 35%;
+}
+
+.col40 {
+    width: 40%;
+}
+
+.col45 {
+    width: 45%;
+}
+
+.col50 {
+    width: 50%;
+}
+
+.col55 {
+    width: 55%;
+}
+
+.col60 {
+    width: 60%;
+}
+
+.col65 {
+    width: 65%;
+}
+
+.col66 {
+    width: 66.66%;
+}
+
+.col70 {
+    width: 70%;
+}
+
+.col75 {
+    width: 75%;
+}
+
+.col80 {
+    width: 80%;
+}
+
+.col90 {
+    width: 90%;
+}
+
+.col100 {
+    width: 100%;
+}
+
+.row10 {
+    height: 10%;
+}
+
+.row15 {
+    height: 15%;
+}
+
+.row20 {
+    height: 20%;
+}
+
+.row25 {
+    height: 25%;
+}
+
+.row30 {
+    height: 30%;
+}
+
+.row33 {
+    height: 33.33%;
+}
+
+.row35 {
+    height: 35%;
+}
+
+.row40 {
+    height: 40%;
+}
+
+.row45 {
+    height: 45%;
+}
+
+.row50 {
+    height: 50%;
+}
+
+.row60 {
+    height: 60%;
+}
+
+.row65 {
+    height: 65%;
+}
+
+.row66 {
+    height: 66.66%;
+}
+
+.row70 {
+    height: 70%;
+}
+
+.row75 {
+    height: 75%;
+}
+
+.row80 {
+    height: 80%;
+}
+
+.row90 {
+    height: 90%;
+}
+
+.row100 {
+    height: 100%;
+}
+
+.white {
+    background: #FFF;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textRight {
+    text-align: right;
+}
+
+.clickable:hover {
+    cursor: pointer;
+}
+
+.pic {
+    display: block; position:absolute; top: 0; left: 0; width: 100%; height: 100%;
+  }
