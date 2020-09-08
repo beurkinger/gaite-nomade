@@ -44,7 +44,7 @@ module.exports = (_, argv) => {
           ],
         },
         {
-          test: /\.(woff(2)?|(o|t)tf|eot|png|jpg|svg)$/,
+          test: /\.(woff(2)?|(o|t)tf|eot|png|jpg|svg|topojson)$/,
           use: [
             {
               loader: 'file-loader',
