@@ -17,16 +17,14 @@
   },
   "keywords": [
     "preact",
-    "boilerplate",
     "javascript",
     "typescript",
-    "webpack",
-    "eslint",
-    "prettier",
-    "post-css",
     "html5",
     "css3",
-    "framework"
+    "Gaité Lyrique",
+    "Exhibitions",
+    "Events",
+    "Prototype"
   ],
   "author": "Thibault Goehringer",
   "license": "GPL-3.0",
