@@ -1,21 +1,29 @@
 export type Event = {
   id: number;
+  coords: {
+    x: number;
+    y: number;
+  };
   type: string;
-  desc1: string;
-  desc2: string;
-  address1: string;
-  address2: string;
+  desc: [string, string];
+  address: [string, string];
   month: string;
   date: string[];
-  linkText: string;
-  linkSrc: string;
-  pic: string;
+  link: {
+    src: string;
+    text: string;
+  };
+  imgUrl: string;
   color: string;
-  lat: number;
-  lng: number;
+  geoCoords: {
+    lat: number;
+    lng: number;
+  };
   isOpen: boolean;
-  x: number;
-  y: number;
-  zIndex: number;
   isFull: boolean;
+  size: {
+    width: number;
+    height: number;
+  };
+  zIndex: number;
 };

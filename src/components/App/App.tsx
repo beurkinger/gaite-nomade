@@ -19,12 +19,12 @@ const App: FunctionComponent = () => {
     const event = events.find((event) => event.id === eventId);
     if (!event || event?.isFull) return;
 
-    const x = event.x + (e.screenX - mouseCoordsRef.current.x);
-    const y = event.y + (e.screenY - mouseCoordsRef.current.y);
+    const x = event.coords.x + (e.screenX - mouseCoordsRef.current.x);
+    const y = event.coords.y + (e.screenY - mouseCoordsRef.current.y);
     mouseCoordsRef.current = { x: e.screenX, y: e.screenY };
     setEvents((events) =>
       events.map((event) => {
-        return event.id === eventId ? { ...event, x, y } : event;
+        return event.id === eventId ? { ...event, coords: { x, y } } : event;
       })
     );
   };
@@ -78,7 +78,7 @@ const App: FunctionComponent = () => {
     );
   };
 
-  const findBiggestZindex = (events: typeof eventsData) =>
+  const findBiggestZindex = (events: Event[]) =>
     events.reduce((acc, event) => {
       return event.zIndex >= acc ? event.zIndex : acc;
     }, 0);

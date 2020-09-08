@@ -5,9 +5,6 @@ import WindowLayout from '../WindowLayout/WindowLayout';
 
 import style from './Window.css';
 
-export const WINDOW_WIDTH_SMALL = 264;
-export const WINDOW_HEIGHT_SMALL = 280;
-
 interface Props {
   onClose: (eventId: number) => void;
   onGrow: (eventId: number) => void;
@@ -40,10 +37,10 @@ const Window: FunctionComponent<Props> = ({
       className={`${style.window} ${event.isFull ? style.full : ''}`}
       style={{
         zIndex: event.zIndex,
-        left: event.isFull ? 0 : event.x,
-        top: event.isFull ? 0 : event.y,
-        width: event.isFull ? '100%' : `${WINDOW_WIDTH_SMALL}px`,
-        height: event.isFull ? '100%' : `${WINDOW_HEIGHT_SMALL}px`,
+        left: event.isFull ? 0 : event.coords.x,
+        top: event.isFull ? 0 : event.coords.y,
+        width: event.isFull ? '100%' : `${event.size.width}px`,
+        height: event.isFull ? '100%' : `${event.size.height}px`,
       }}
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}

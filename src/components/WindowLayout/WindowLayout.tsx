@@ -42,8 +42,8 @@ const WindowLayout: FunctionComponent<Props> = ({
         <div className={`${style.row} ${style.row20}`}>
           <div className={`${style.cell} ${style.col25} ${style.white}`}>
             <span className={`${style.address}`}>
-              {event.address1} <br />
-              {event.address2}
+              {event.address[0]} <br />
+              {event.address[1]}
             </span>
           </div>
           <div className={`${style.cell} ${style.col20} ${style.white}`}>
@@ -79,9 +79,9 @@ const WindowLayout: FunctionComponent<Props> = ({
             <div className={`${style.row} ${style.row40}`}>
               <div className={`${style.cell} ${style.col100} ${style.white}`}>
                 <span className={`${style.desc}`}>
-                  {event.desc1}
+                  {event.desc[0]}
                   <br />
-                  {event.desc2}
+                  {event.desc[1]}
                 </span>
               </div>
             </div>
@@ -91,7 +91,7 @@ const WindowLayout: FunctionComponent<Props> = ({
             <div
               className={`${style.pic}`}
               style={{
-                background: `url("${event.pic}") no-repeat center center/cover`,
+                background: `url("${event.imgUrl}") no-repeat center center/cover`,
               }}
             ></div>
           </div>
@@ -100,11 +100,11 @@ const WindowLayout: FunctionComponent<Props> = ({
           <div className={`${style.cell} ${style.col100} ${style.textCenter}`}>
             <a
               className={`${style.link}`}
-              href={event.linkSrc}
+              href={event.link.src}
               rel="noreferrer"
               target="_blank"
             >
-              {event.linkText}
+              {event.link.text}
             </a>
           </div>
         </div>
@@ -116,8 +116,8 @@ const WindowLayout: FunctionComponent<Props> = ({
       <div className={`${style.row} ${style.row20}`}>
         <div className={`${style.cell} ${style.col75} ${style.white}`}>
           <span className={`${style.address}`}>
-            {event.address1} <br />
-            {event.address2}
+            {event.address[0]} <br />
+            {event.address[1]}
           </span>
         </div>
         <div
@@ -149,11 +149,11 @@ const WindowLayout: FunctionComponent<Props> = ({
         <div className={`${style.cell} ${style.col100} ${style.textCenter}`}>
           <a
             className={`${style.link}`}
-            href={event.linkSrc}
+            href={event.link.src}
             rel="noreferrer"
             target="_blank"
           >
-            {event.linkText}
+            {event.link.text}
           </a>
         </div>
       </div>
