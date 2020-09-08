@@ -4,6 +4,7 @@ import { useRef, useState } from 'preact/hooks';
 import { Event } from '../../types/types';
 import { eventsData } from '../../fakeData';
 import Logo from '../../assets/svg/logo.svg';
+import Map from '../Map/Map';
 import Window from '../Window/Window';
 
 import style from './App.css';
@@ -82,15 +83,17 @@ const App: FunctionComponent = () => {
       return event.zIndex >= acc ? event.zIndex : acc;
     }, 0);
 
-  // const handleOpen = (id: number) => {
-  //   const biggestZindex = findBiggestZindex(events);
+  const handleOpen = (id: number) => {
+    const biggestZindex = findBiggestZindex(events);
 
-  //   setEvents(events => events.map(event => {
-  //     return event.id === id
-  //       ? { ...event, isOpen: true, zIndex: biggestZindex + 1 }
-  //       : event;
-  //   }));
-  // }
+    setEvents((events) =>
+      events.map((event) => {
+        return event.id === id
+          ? { ...event, isOpen: true, zIndex: biggestZindex + 1 }
+          : event;
+      })
+    );
+  };
 
   return (
     <div className={style.app} onMouseMove={handleMove}>
@@ -110,7 +113,7 @@ const App: FunctionComponent = () => {
           )
         )}
       </div>
-      {/* <Map  events={events} openHandler={handleOpen}/>  */}
+      <Map events={events} onOpen={handleOpen} />
     </div>
   );
 };

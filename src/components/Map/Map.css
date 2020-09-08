@@ -1,0 +1,66 @@
+.map {
+  display: block;
+  position: relative;
+  /*width: 100%; height: 100%;*/
+  top: 10%;
+  width: 85%; height: 65%;
+  overflow: visible;
+  margin: 0 auto;
+}
+
+.mapPath {
+  fill : #FFFFFF;
+  stroke : #EBEBEB;
+  stroke-width : 5pt;
+  transition: fill 1s;
+  /*stroke-linecap : round;
+  stroke-linejoin : round;
+  stroke-dasharray : 10 12;*/
+}
+
+.mapPath:hover {
+  /*fill : #FAFAFA;*/
+  transition: fill 0s;
+}
+
+.mapLink {
+  /*stroke : #000000;*/
+  fill: transparent;
+  stroke-width : 10;
+  /*stroke-linecap : round;*/
+  stroke-dasharray : 20 12;
+  /*opacity : 0.5;*/
+}
+
+.mapIcon {
+  /*fill: #000;*/
+  stroke-width: 8pt;
+  stroke: #000;
+  /*opacity : 0.8;*/
+}
+
+.mapIcon:hover {
+  cursor: pointer;
+}
+
+.mapText {
+  font-size: 24px;
+  font-family: TypoLyrique13;
+  /*text-transform: uppercase;*/
+}
+
+.mapDot {}
+
+/*.area {
+  transition: fill 1.5s;
+  fill: #EEEEEE;
+  stroke : #FFFFFF;
+  stroke-width: 5pt;
+  stroke-linecap : round;
+  stroke-linejoin : round;
+}
+
+.area:hover {
+  transition: fill 0s;
+  fill: #DDDDDD;
+}*/
