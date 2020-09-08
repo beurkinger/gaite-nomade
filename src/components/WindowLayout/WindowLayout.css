@@ -10,20 +10,20 @@
     background: #FFF;
 }
 
-.windowLayout .cell {
+ .cell {
     padding: 8px 14px;
     border: 2px solid black;
 }
 
-.windowLayout .cell.borderTop {
+ .cell.borderTop {
     border-width: inherit 0 0 0;
 }
 
-.windowLayout .cell.borderTop {
+ .cell.borderTop {
     border-width: 0 0 inherit 0;
 }
 
-.windowLayout .exit {
+ .exit {
     position: relative;
     box-sizing: border-box;
     top: 8%;
@@ -32,9 +32,9 @@
     margin: 0 auto;
 }
 
-.windowLayout .address {}
+ .address {}
 
-.windowLayout .eventType {
+ .eventType {
     display: inline-block;
     margin-top: 10px;
     font: bold 70px "TypoLyrique13", Helvetica, Arial;
@@ -43,28 +43,28 @@
     color: rgba(0, 0, 0, 0.80);
 }
 
-.windowLayout .eventType:hover {
+ .eventType:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
-.windowLayout .month {
+ .month {
     text-transform: uppercase;
 }
 
-.windowLayout .date, .windowLayout .year {
+ .date,  .year {
     position: absolute;
     bottom: 5px;
     font: bold 30px "TypoLyrique13", Helvetica, Arial;
     letter-spacing: 3px;
 }
 
-.windowLayout .year {
+ .year {
     font: bold 30px "CircularStd", Helvetica, Arial;
     letter-spacing: 2px;
 }
 
-.windowLayout .link {
+ .link {
     display: block;
     position: relative;
     top: 50%;
@@ -75,57 +75,57 @@
     outline: 0;
 }
 
-.windowLayout .link:hover {
+ .link:hover {
     text-decoration: underline;
 }
 
-.windowLayout.large {
+.large {
     border: 3px solid black;
     font-size: calc((2vw + 5vh) / 2);
     line-height: 135%;
     letter-spacing: 0.05vw;
 }
 
-.windowLayout.large .cell {
+.large .cell {
     padding: 3vh 3vw;
     border: 3px solid black;
 }
 
-.windowLayout.large .exit {
+.large .exit {
     top: 20%;
     height: 60%;
 }
 
-.windowLayout.large .address, .windowLayout.large .eventType, .windowLayout.large .desc, .windowLayout.large .date, .windowLayout.large .year {
+.large .address, .large .eventType, .large .desc, .large .date, .large .year {
     position: relative;
     display: block;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.windowLayout.large .eventType {
+.large .eventType {
     margin-top: 0;
     bottom: auto;
     font: bold calc((11vw + 11vh) / 2) "TypoLyrique13", Helvetica, Arial;
     letter-spacing: 0.3vw;
 }
 
-.windowLayout.large .eventType:hover {
+.large .eventType:hover {
     cursor: default;
     text-decoration: none;
 }
 
-.windowLayout.large .desc {
+.large .desc {
     text-transform: uppercase;
 }
 
-.windowLayout.large .date, .windowLayout.large .year {
+.large .date, .large .year {
     bottom: auto;
     font: inherit;
     letter-spacing: 0.05vw;
 }
 
-.windowLayout.large .year {
+.large .year {
     text-align: center;
     font: inherit;
     letter-spacing: 0.2vw;
