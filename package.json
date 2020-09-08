@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/beurkinger/preact-starter-kit#readme",
   "dependencies": {
+    "d3": "^6.1.1",
     "preact": "^10.4.4"
   },
   "devDependencies": {
