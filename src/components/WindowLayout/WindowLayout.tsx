@@ -87,11 +87,11 @@ const WindowLayout: FunctionComponent<Props> = ({
             </div>
           </div>
           <div className={`${style.cell} ${style.col20} ${style.white}`}></div>
-          <div className={`${style.cell} c${style.col35} ${style.white}`}>
+          <div className={`${style.cell} ${style.col35} ${style.white}`}>
             <div
               className={`${style.pic}`}
               style={{
-                background: `url('./build/data/${event.pic}') no-repeat center center/cover;`,
+                background: `url("${event.pic}") no-repeat center center/cover`,
               }}
             ></div>
           </div>
