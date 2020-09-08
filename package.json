@@ -34,8 +34,10 @@
   "homepage": "https://github.com/beurkinger/preact-starter-kit#readme",
   "dependencies": {
     "@types/d3": "^5.7.2",
+    "@types/topojson": "^3.2.2",
     "d3": "^6.1.1",
-    "preact": "^10.4.4"
+    "preact": "^10.4.4",
+    "topojson-client": "^3.1.0"
   },
   "devDependencies": {
     "@teamsupercell/typings-for-css-modules-loader": "^2.2.0",
