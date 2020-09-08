@@ -44,7 +44,7 @@ module.exports = (_, argv) => {
           ],
         },
         {
-          test: /\.(woff(2)?|(o|t)tf|eot|png|jpg|svg|topojson)$/,
+          test: /\.(woff(2)?|(o|t)tf|eot|png|jpg|svg)$/,
           use: [
             {
               loader: 'file-loader',
@@ -55,6 +55,7 @@ module.exports = (_, argv) => {
             },
           ],
         },
+        { test: /\.(topo)?json$/, loader: 'json-loader' },
       ],
     },
     plugins: [

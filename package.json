@@ -36,6 +36,7 @@
     "@types/d3": "^5.7.2",
     "@types/topojson": "^3.2.2",
     "d3": "^6.1.1",
+    "json-loader": "^0.5.7",
     "preact": "^10.4.4",
     "topojson-client": "^3.1.0"
   },
