@@ -20,7 +20,7 @@ export const eventsData = [
     color: '#84a0fb',
     lat: 48.8566,
     lng: 2.3522,
-    isOpen: false,
+    isOpen: true,
     x: 285,
     y: 100,
     zIndex: 2,
