@@ -37,7 +37,7 @@
 
 .mapText {
   font-size: 24px;
-  font-family: TypoLyrique13;
+  font-family: var(--font-family-2);
 }
 
 .mapDot {}

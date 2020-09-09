@@ -66,9 +66,7 @@ const WindowLayout: FunctionComponent<Props> = ({
           </div>
         </div>
         <div className={`${style.row} ${style.row65}`}>
-          <div
-            className={`${style.cell} ${style.col45} ${style.noPadding} ${style.noBorder}`}
-          >
+          <div className={`${style.cell} ${style.col45} ${style.naked}`}>
             <div className={`${style.row} ${style.row60}`}>
               <div
                 className={`${style.cell} ${style.col100} ${style.textCenter}`}
