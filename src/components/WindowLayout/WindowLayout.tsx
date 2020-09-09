@@ -36,7 +36,7 @@ const WindowLayout: FunctionComponent<Props> = ({
   if (event.isFull)
     return (
       <div
-        className={`${style.windowLayout} ${style.large}`}
+        className={`${style.windowLayoutLarge}`}
         style={{ background: event.color }}
       >
         <div className={`${style.row} ${style.row20}`}>
@@ -59,18 +59,18 @@ const WindowLayout: FunctionComponent<Props> = ({
             <div className={`${style.year}`}>{event.date[0]}</div>
           </div>
           <div
-            className={`${style.cell} ${style.col35} ${style.textCenter} ${style.clickable}`}
+            className={`${style.cell} ${style.col35} ${style.clickable}`}
             onClick={handleOnShrink}
           >
             <img className={`${style.exit}`} src={Cross} />
           </div>
         </div>
         <div className={`${style.row} ${style.row65}`}>
-          <div className={`${style.cell} ${style.col45} ${style.naked}`}>
+          <div
+            className={`${style.cell} ${style.col45} ${style.noBorder} ${style.noPadding}`}
+          >
             <div className={`${style.row} ${style.row60}`}>
-              <div
-                className={`${style.cell} ${style.col100} ${style.textCenter}`}
-              >
+              <div className={`${style.cell} ${style.col100}`}>
                 <h3 className={`${style.eventType}`}>{event.type}</h3>
               </div>
             </div>
@@ -85,17 +85,15 @@ const WindowLayout: FunctionComponent<Props> = ({
             </div>
           </div>
           <div className={`${style.cell} ${style.col20} ${style.white}`}></div>
-          <div className={`${style.cell} ${style.col35} ${style.white}`}>
-            <div
-              className={`${style.pic}`}
-              style={{
-                background: `url("${event.imgUrl}") no-repeat center center/cover`,
-              }}
-            ></div>
-          </div>
+          <div
+            className={`${style.cell} ${style.col35} ${style.white}  ${style.noPadding}`}
+            style={{
+              background: `url("${event.imgUrl}") no-repeat center center/cover`,
+            }}
+          />
         </div>
         <div className={`${style.row} ${style.row15}`}>
-          <div className={`${style.cell} ${style.col100} ${style.textCenter}`}>
+          <div className={`${style.cell} ${style.col100}`}>
             <a
               className={`${style.link}`}
               href={event.link.src}
@@ -119,32 +117,32 @@ const WindowLayout: FunctionComponent<Props> = ({
           </span>
         </div>
         <div
-          className={`${style.cell} ${style.col25} ${style.white} ${style.textCenter} ${style.clickable}`}
+          className={`${style.cell} ${style.col25} ${style.white} ${style.clickable}`}
           onClick={handleOnClose}
         >
           <img className={`${style.exit}`} src={Cross} />
         </div>
       </div>
       <div className={`${style.row} ${style.row40}`}>
-        <div className={`${style.cell} ${style.col100} ${style.textCenter}`}>
+        <div className={`${style.cell} ${style.col100}`}>
           <h3 className={`${style.eventType}`} onClick={handleOnGrow}>
             {event.type}
           </h3>
         </div>
       </div>
       <div className={`${style.row} ${style.row25}`}>
-        <div className={`${style.cell} ${style.col60} ${style.white}`}>
+        <div className={`${style.cellFlexEnd} ${style.col60} ${style.white}`}>
           <span className={`${style.month}`}>{event.month}</span>
           <div className={`${style.date}`}>
             {event.date[2]}._{event.date[1]}
           </div>
         </div>
-        <div className={`${style.cell} ${style.col40} ${style.white}`}>
+        <div className={`${style.cellFlexEnd} ${style.col40} ${style.white}`}>
           <div className={`${style.year}`}>{event.date[0]}</div>
         </div>
       </div>
       <div className={`${style.row} ${style.row15}`}>
-        <div className={`${style.cell} ${style.col100} ${style.textCenter}`}>
+        <div className={`${style.cell} ${style.col100}`}>
           <a
             className={`${style.link}`}
             href={event.link.src}

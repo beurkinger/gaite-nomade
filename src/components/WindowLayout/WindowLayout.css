@@ -1,5 +1,4 @@
-.windowLayout {
-    box-sizing: border-box;
+.windowLayout, .windowLayoutLarge {
     position: relative;
     border: 0.125rem solid black;
     width: 100%;
@@ -11,134 +10,29 @@
     background: #FFF;
 }
 
- .cell {
-    padding: 0.5rem 0.875rem;
+.cell, .cellFlexEnd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.3rem 0.875rem;
     border: 0.125rem solid black;
-}
-
- .exit {
-    position: relative;
-    box-sizing: border-box;
-    top: 8%;
-    height: 84%;
-    width: auto;
-    margin: 0 auto;
-}
-
- .address {}
-
- .eventType {
-    display: inline-block;
-    margin-top: 0.625rem;
-    font: bold 4.375rem var(--font-family-2);
-    letter-spacing: 0.1875rem;
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.80);
-}
-
- .eventType:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
- .month {
-    text-transform: uppercase;
-}
-
- .date,  .year {
-    position: absolute;
-    bottom: 0.3125rem;
-    font: bold 1.875rem var(--font-family-2);
-    letter-spacing: 0.1875rem;
-}
-
- .year {
-    font-size: 1.875rem;
-    letter-spacing: 0.125rem;
-}
-
- .link {
-    display: block;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    text-transform: uppercase;
-    text-decoration: none;
-    color: inherit;
-    outline: 0;
-}
-
- .link:hover {
-    text-decoration: underline;
-}
-
-.large {
-    border: 0.1875rem solid black;
-    font-size: calc((2vw + 5vh) / 2);
-    line-height: 135%;
-    letter-spacing: 0.05vw;
-}
-
-.large .cell {
-    padding: 3vh 3vw;
-    border: 0.1875rem solid black;
-}
-
-.large .exit {
-    top: 20%;
-    height: 60%;
-}
-
-.large .address, .large .eventType, .large .desc, .large .date, .large .year {
-    position: relative;
-    display: block;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.large .eventType {
-    margin-top: 0;
-    bottom: auto;
-    font: bold calc((11vw + 11vh) / 2) var(--font-family-2);
-    letter-spacing: 0.3vw;
-}
-
-.large .eventType:hover {
-    cursor: default;
-    text-decoration: none;
-}
-
-.large .desc {
-    text-transform: uppercase;
-}
-
-.large .date, .large .year {
-    bottom: auto;
-    letter-spacing: 0.05vw;
-}
-
-.large .year {
-    text-align: center;
-    letter-spacing: 0.2vw;
-    font-size: calc((3vw + 6vh) / 2);
-}
-
-.row {
-    display: block;
-}
-
-.cell {
-    box-sizing: border-box;
-    display: block;
-    float: left;
-    position: relative;
-    height: 100%;
     overflow: hidden;
 }
 
-.naked {
-    border: none !important;
+.cellFlexEnd {
+    justify-content: flex-end;
+}
+
+.row {
+    display: flex;
+}
+
+.noPadding {
     padding: 0 !important;
+}
+
+.noBorder {
+    border: none !important;
 }
 
 .col10 {
@@ -289,26 +183,93 @@
     height: 100%;
 }
 
-.white {
-    background: #FFF;
+.exit {
+    /* position: relative; */
+    /* box-sizing: border-box; */
+    /* top: 8%; */
+    height: 60%;
+    width: auto;
+    margin: 0 auto;
 }
 
-.textLeft {
-    text-align: left;
-}
+.address {}
 
-.textCenter {
+.eventType {
+    margin-top: 0.625rem;
+    font: bold 4.375rem var(--font-family-2);
+    letter-spacing: 0.1875rem;
+    text-transform: uppercase;
     text-align: center;
 }
 
-.textRight {
-    text-align: right;
+.eventType:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.month {
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.date, .year {
+    font: bold 1.875rem var(--font-family-2);
+    letter-spacing: 0.1875rem;
+}
+
+.link {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-black);
+    outline: 0;
+    text-align: center;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.windowLayoutLarge {
+    border: 0.1875rem solid black;
+    font-size: calc((2vw + 5vh) / 2);
+    line-height: 135%;
+    letter-spacing: 0.05vw;
+}
+
+.windowLayoutLarge .cell {
+    padding: 3vh 3vw;
+    border: 0.1875rem solid black;
+}
+
+.windowLayoutLarge .eventType {
+    font-size: calc((11vw + 11vh) / 2);
+    letter-spacing: 0.3vw;
+}
+
+.windowLayoutLarge .eventType:hover {
+    cursor: default;
+    text-decoration: none;
+}
+
+.desc {
+    text-transform: uppercase;
+}
+
+.windowLayoutLarge .date, .windowLayoutLarge .year {
+    letter-spacing: 0.05vw;
+}
+
+.windowLayoutLarge .year {
+    text-align: center;
+    letter-spacing: 0.2vw;
+    font-size: calc((3vw + 6vh) / 2);
+}
+
+.white {
+    background: #FFF;
 }
 
 .clickable:hover {
     cursor: pointer;
 }
-
-.pic {
-    display: block; position:absolute; top: 0; left: 0; width: 100%; height: 100%;
-  }
