@@ -11,13 +11,7 @@
   fill : #FFFFFF;
   stroke : #DDD;
   stroke-width : 2pt;
-  /* transition: fill 1s; */
 }
-
-/* .mapPath:hover {
-  fill : #FAFAFA;
-  transition: fill 0s;
-} */
 
 .mapIcon {
   fill: transparent;
@@ -40,7 +34,7 @@
 
 .mapLink {
   fill: transparent;
-  stroke-width : 8;
+  stroke-width : 0.5rem;
   /* stroke-dasharray : 8 10; */
   opacity: 0.5;
 }

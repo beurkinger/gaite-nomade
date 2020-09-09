@@ -7,7 +7,7 @@
     font-weight: bold;
     line-height: 130%;
     letter-spacing: 0.03125rem;
-    background: #FFF;
+    background: var(--color-white);
 }
 
 .cell, .cellFlexEnd {
@@ -267,7 +267,7 @@
 }
 
 .white {
-    background: #FFF;
+    background: var(--color-white);
 }
 
 .clickable:hover {
