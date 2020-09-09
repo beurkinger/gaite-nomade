@@ -84,7 +84,6 @@ const Map: FunctionComponent<Props> = ({ events, onOpen }: Props) => {
                 className={style.mapIcon}
                 cx={xy[0]}
                 cy={xy[1]}
-                r={20}
                 stroke={event.color}
               />
               <circle
@@ -92,12 +91,11 @@ const Map: FunctionComponent<Props> = ({ events, onOpen }: Props) => {
                 cx={xy[0]}
                 cy={xy[1]}
                 fill={event.color}
-                r={10}
               />
               <text
                 className={style.mapText}
                 x={xy[0]}
-                y={xy[1] + 52}
+                y={xy[1]}
                 fill={event.color}
               >
                 {event.type}

@@ -19,6 +19,25 @@
   transition: fill 0s;
 } */
 
+.mapIcon {
+  fill: transparent;
+  stroke-width: 0.4rem;
+  r: 1rem;
+}
+
+.mapDot {
+  r: 0.4rem;
+}
+
+
+.mapText {
+  transform: translateY(2.75rem);
+  font-size: 1.5rem;
+  text-anchor: middle;
+  font-family: var(--font-family-2);
+  letter-spacing: 0.075rem;
+}
+
 .mapLink {
   fill: transparent;
   stroke-width : 8;
@@ -26,19 +45,6 @@
   opacity: 0.5;
 }
 
-.mapIcon {
-  fill: transparent;
-  stroke-width: 8pt;
-}
-
-.mapIcon:hover {
+.mapDot:hover, .mapIcon:hover, .mapText:hover {
   cursor: pointer;
 }
-
-.mapText {
-  font-size: 1.5rem;
-  text-anchor: middle;
-  font-family: var(--font-family-2);
-}
-
-.mapDot {}
