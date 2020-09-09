@@ -38,7 +38,7 @@ export const eventsData: Event[] = [
     date: ['2017', '11', '03'],
     link: { text: 'www.gaite-lyrique.net', src: 'https://gaite-lyrique.net' },
     imgUrl: food,
-    color: '#eaea85',
+    color: '#ebeb89',
     geoCoords: {
       lat: 48.83,
       lng: 2.3652,
@@ -84,7 +84,7 @@ export const eventsData: Event[] = [
     date: ['2018', '02', '24'],
     link: { text: 'www.gaite-lyrique.net', src: 'https://gaite-lyrique.net' },
     imgUrl: fashion,
-    color: '#e69eb7',
+    color: '#e7a2ba',
     geoCoords: {
       lat: 48.86,
       lng: 2.28,
@@ -107,7 +107,7 @@ export const eventsData: Event[] = [
     date: ['2017', '10', '03'],
     link: { text: 'www.gaite-lyrique.net', src: 'https://gaite-lyrique.net' },
     imgUrl: night,
-    color: '#c3a2af',
+    color: '#c7a8b4',
     geoCoords: {
       lat: 48.88,
       lng: 2.32,

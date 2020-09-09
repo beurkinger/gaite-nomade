@@ -9,8 +9,14 @@
 
 .mapPath {
   fill : #FFFFFF;
-  stroke : #DDD;
+  stroke : #CCC;
   stroke-width : 2pt;
+  transition: fill 1s;
+}
+
+.mapPath:hover {
+  fill : #F8F8F8;
+  transition: fill 0ms;
 }
 
 .mapIcon {
