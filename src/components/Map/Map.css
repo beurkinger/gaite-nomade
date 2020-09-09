@@ -37,6 +37,7 @@
 
 .mapText {
   font-size: 1.5rem;
+  text-anchor: middle;
   font-family: var(--font-family-2);
 }
 

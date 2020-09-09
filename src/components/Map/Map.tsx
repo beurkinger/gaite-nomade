@@ -96,7 +96,6 @@ const Map: FunctionComponent<Props> = ({ events, onOpen }: Props) => {
               />
               <text
                 className={style.mapText}
-                textAnchor="middle"
                 x={xy[0]}
                 y={xy[1] + 52}
                 fill={event.color}
