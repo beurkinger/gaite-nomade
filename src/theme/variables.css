@@ -1,18 +1,16 @@
 @font-face {
     font-family: 'CircularStd';
-    src: url('../assets/fonts/CircularStd-Bold.otf');
-    font-weight: bold;
+    src: url('../assets/fonts/CircularStd-Bold.otf') format('truetype');
+    font-weight: 700;
 }
 
 @font-face {
     font-family: 'TypoLyrique13';
-    src: url('../assets/fonts/TypoLyrique13-Bold.otf');
-    font-weight: bold;
+    src: url('../assets/fonts/TypoLyrique13-Bold.otf') format('truetype');
+    font-weight: 700;
 }
 
 :root {
-    --color-main-1: #0000FF;
-    --color-main-2: #FF0000;
     --color-black: #000000;
     --color-white: #FFFFFF;
     --font-family-1: CircularStd, Helvetica, Arial, sans-serif;
