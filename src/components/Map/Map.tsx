@@ -78,9 +78,9 @@ const Map: FunctionComponent<Props> = ({ events, onOpen }: Props) => {
             event.geoCoords.lng,
             event.geoCoords.lat,
           ]) ?? [0, 0];
-          const dateStr = `${event.date[2]}-${
+          const dateStr = `${event.date[2]}/${
             event.date[1]
-          }-${event.date[0].substr(2, 2)}`;
+          }/${event.date[0].substr(2, 2)}`;
           return (
             <g key={event.id} onClick={() => onOpen(event.id)}>
               <circle
@@ -101,7 +101,7 @@ const Map: FunctionComponent<Props> = ({ events, onOpen }: Props) => {
                 y={xy[1]}
                 fill={event.color}
               >
-                {dateStr} {event.type}
+                {dateStr}
               </text>
             </g>
           );
