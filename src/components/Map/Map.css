@@ -10,20 +10,21 @@
 .mapPath {
   fill : #FFFFFF;
   stroke : #CCC;
-  stroke-width : 2pt;
-  transition: fill 1s;
+  stroke-width : 3pt;
+  /* transition: fill 1s; */
 }
 
-.mapPath:hover {
+/* .mapPath:hover {
   fill : #F8F8F8;
   transition: fill 0ms;
-}
+} */
 
 .mapIcon {
   fill: transparent;
   stroke-width: 0.4rem;
   r: 1rem;
 }
+
 
 .mapDot {
   r: 0.4rem;
@@ -35,16 +36,24 @@
   font-size: 1.25rem;
   text-anchor: middle;
   font-family: var(--font-family-2);
-  letter-spacing: 0.075rem;
 }
 
 .mapLink {
   fill: transparent;
   stroke-width : 0.5rem;
-  /* stroke-dasharray : 8 10; */
-  opacity: 0.5;
+  stroke-dasharray : 10 8;
+  opacity: 0.75;
 }
 
-.mapDot:hover, .mapIcon:hover, .mapText:hover {
+.mapEvent:hover {
   cursor: pointer;
+}
+
+.mapEvent:hover .mapIcon{
+    stroke-width: 0.6rem;
+    r: 1.25rem;
+}
+
+.mapEvent:hover .mapText{
+  text-decoration: underline;
 }
