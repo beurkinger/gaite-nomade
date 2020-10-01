@@ -1,7 +1,7 @@
 {
   "name": "gaite-nomade",
   "version": "1.0.0",
-  "description": "A quick prototype for an event website.",
+  "description": "A quick prototype for an events website.",
   "main": "index.html",
   "scripts": {
     "build": "webpack --mode production",
